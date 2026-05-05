@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Ambiente virtual
+.venv/
+cdh/.venv/
+
+# Variáveis de ambiente
+.env
+
+# Testes e cache
+.pytest_cache/
+
+# Backups locais gerados pela sessão de dev
+src_backup_*/
+
+# Logs e resultados gerados localmente
+*.log
+*.log.txt
+*_log.txt
+cdh/logs/
+
+# Resultados de benchmark — versionar apenas os validados (nomes explícitos abaixo)
+# Regra geral: ignorar tudo
+*resultados*.json
+exploracao_resultados.json
+# Resultados exploratórios intermediários
+massive_results.json
+mega_resultados.json
+podcast_stress_test_results.json
+resultados_benchmark.json
+benchmark_v2_results.json
+# Permitir explicitamente os resultados validados
+!benchmark_v3_results.json
+!benchmark_sample_results.json
+!benchmark_llama32_3b_results.json
+!benchmark_mistral7b_results.json
+!benchmark_qwen25coder_results.json
+!benchmark_gemma29b_results.json
+!benchmark_phi3mini_results.json
+!benchmark_deepseek_r1_7b_results.json
+!benchmark_qwen25_7b_results.json
+!benchmark_llama31_8b_prog_results.json
+!benchmark_qwen25coder_prog_results.json
+!benchmark_qwen25_prog_results.json
+
+# Scripts exploratórios / manuais (não são testes de suite)
+exploracao*.py
+test_agent.py
+test_cdh.py
+
+# Protótipo antigo e scripts obsoletos
+cdh/
+benchmark.py
+massive_benchmark.py
+mega_benchmark.py
+PROXIMOS_PASSOS.md
+
+# Vault Obsidian (notas pessoais do projeto)
+obsidian/
+
+# Arquivos temporários e downloads
+*.zip
+*.tgz
+*.tar.zst
+/tmp/
+
+# LaTeX auxiliares
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.glg
+*.glo
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+tcc_latex/main.pdf
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
